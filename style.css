@@ -1,0 +1,21 @@
+h1 {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+h1:hover {
+    background-color: red;
+    color: green;
+}
+
+p::first-letter {
+    font-size: large;
+    color: aquamarine;
+}
+
+p::selection {
+    background-color: blanchedalmond;
+    color: blue;
+}
