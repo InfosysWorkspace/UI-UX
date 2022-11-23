@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+            <style>
+                * {
+                    box-sizing: border-box;
+                    max-height:100vh;
+                    max-width:100hw;
+                }
+
+
+
+            .header {
+                    border: 1px solid blue;
+                    padding: 15px;
+                }
+
+
+
+
+                .row{
+                    display:flex;
+                    flex-direction: row;
+                }
+
+
+
+            [class*="col-"] {
+                    float: left;
+                    padding: 15px;
+                    border: 1px solid red;
+            
+                }
+
+
+
+            li {
+                    list-style-type:upper-roman;
+                }
+
+
+
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+
+                @media only screen and (max-width: 600px){
+                    .row{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    [class="col-"]{
+                        width: 100% !important;
+                    }
+                }
+            </style>
+    </head>
+    <body>
+
+
+
+        <div class="header">
+        <h1>Infosys</h1>
+        </div>
+
+
+
+        <div class="row">
+
+
+
+        <div class="col-5">
+                <ul>
+                        <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                    <li>Menu 4</li>
+                    <li>Menu 5</li>
+                    <li>Menu 6</li>
+                    <li>Menu 7</li>
+                    <li>Menu 8</li>
+                    <li>Menu 9</li>
+                </ul>
+            </div>
+
+
+
+        <div class="col-7">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac fringilla urna. Fusce posuere orci id orci luctus, sed molestie risus                 lobortis. Sed posuere fermentum elit vitae consequat. Praesent et lacinia urna. Nam porta consequat ante eu facilisis. Aliquam porta metus             id dictum fermentum. Nunc vehicula tellus dolor, varius facilisis elit imperdiet ut. </p>
+                <p>Vivamus lectus diam, dictum quis mi ut, imperdiet viverra sapien. Morbi ante dui, rhoncus a mauris et, fringilla facilisis sapien. Duis                 posuere sapien vel neque eleifend gravida. Integer mattis convallis massa sed ultricies. Integer tristique quam tortor, a euismod felis                 fringilla quis. Maecenas lorem justo, finibus et lacinia condimentum, volutpat in enim.</p>
+            </div>
+
+
+
+        </div>
+
+
+
+    </body>
+</html>
